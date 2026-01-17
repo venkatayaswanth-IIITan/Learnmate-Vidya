@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Vidya AI Learning Assistant",
+  "version": "1.0",
+  "description": "Enhance your learning experience with AI-powered features and real-time collaboration.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.olabs.edu.in/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.olabs.edu.in/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

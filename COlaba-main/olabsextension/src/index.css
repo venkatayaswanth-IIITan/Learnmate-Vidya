@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure they take full width */
+}
+
+#root { /* Or whatever the root element of your react app is.*/
+  width: 350px; /*Or any value you think is good.*/
+}
